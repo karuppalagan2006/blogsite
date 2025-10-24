@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Blog Site with Comments</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Blog Site with Comment Section</h1>
+    <p class="subtitle">Create posts, read, and comment — stored in your browser.</p>
+  </header>
+
+  <main class="container">
+    <section id="create-post">
+      <h2>Create a New Post</h2>
+      <input id="post-title" placeholder="Title" />
+      <textarea id="post-content" placeholder="Write your post..." rows="6"></textarea>
+      <button id="publish-btn">Publish Post</button>
+    </section>
+
+    <section id="feed">
+      <h2>Recent Posts</h2>
+      <div id="posts-list"></div>
+    </section>
+
+    <section id="post-view" class="hidden">
+      <button id="back-btn">← Back to Feed</button>
+      <article id="post-full">
+        <h2 id="view-title"></h2>
+        <p id="view-meta"></p>
+        <div id="view-content"></div>
+      </article>
+
+      <div id="comments-section">
+        <h3>Comments (<span id="comments-count">0</span>)</h3>
+        <div id="comments-list"></div>
+
+        <h4>Add a comment</h4>
+        <input id="comment-author" placeholder="Your name" />
+        <textarea id="comment-text" placeholder="Write a comment..." rows="3"></textarea>
+        <button id="add-comment-btn">Add Comment</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <small>Local demo — data saved in browser localStorage.</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

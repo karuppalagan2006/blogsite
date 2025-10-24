@@ -1,0 +1,17 @@
+:root{--bg:#f7f7fb;--card:#fff;--accent:#2b6cb0;--muted:#666}
+*{box-sizing:border-box;font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial}
+body{margin:0;background:var(--bg);color:#111}
+header{background:linear-gradient(90deg,#2b6cb0,#3182ce);color:white;padding:24px 16px;text-align:center}
+header h1{margin:0;font-size:1.6rem}
+.subtitle{opacity:.95;margin:6px 0 0;font-size:.95rem}
+.container{max-width:900px;margin:24px auto;padding:0 16px}
+section{background:var(--card);padding:16px;margin-bottom:18px;border-radius:12px;box-shadow:0 4px 14px rgba(20,20,40,0.06)}
+#post-title,#comment-author,textarea,input{width:100%;padding:10px;margin-top:8px;border:1px solid #e6e6ef;border-radius:8px}
+#publish-btn,#add-comment-btn,#back-btn{margin-top:10px;padding:10px 14px;border:none;border-radius:8px;background:var(--accent);color:white;cursor:pointer}
+#posts-list .post-card{padding:12px;border-bottom:1px solid #f0f0f6}
+.post-card h3{margin:0;cursor:pointer;color:var(--accent)}
+.post-card p{margin:6px 0;color:var(--muted);font-size:.95rem}
+.hidden{display:none}
+#comments-list .comment{border-top:1px dashed #efefef;padding:8px 0}
+.comment .meta{font-size:.85rem;color:var(--muted)}
+footer{text-align:center;padding:16px;color:var(--muted)}

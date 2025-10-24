@@ -20,4 +20,3 @@ Posts and comments are stored in browser `localStorage`.
    git init
    git add .
    git commit -m "Initial commit - blog with comment section"
-   
